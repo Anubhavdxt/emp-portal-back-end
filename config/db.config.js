@@ -10,6 +10,11 @@ const dbConn = mysql.createConnection({
   //   user: DB_USERNAME,
   //   password: DB_PASSWORD,
   //   database: DB_DATABASE,
+
+  //   host: "localhost",
+  //   user: "root",
+  //   password: "@nubhav143744AD",
+  //   database: "emp-reg-app",
 });
 dbConn.connect(function (err) {
   if (err) throw err;
