@@ -2,10 +2,14 @@
 const mysql = require("mysql");
 //local mysql db connection
 const dbConn = mysql.createConnection({
-  host: env(DB_HOST, "remotemysql.com"),
-  user: env(DB_USERNAME, "58qBb1YrN2"),
-  password: env(DB_PASSWORD, "V9339TG5LU"),
-  database: env(DB_DATABASE, "58qBb1YrN2"),
+  host: "remotemysql.com",
+  user: "58qBb1YrN2",
+  password: "V9339TG5LU",
+  database: "58qBb1YrN2",
+  //   host: DB_HOST,
+  //   user: DB_USERNAME,
+  //   password: DB_PASSWORD,
+  //   database: DB_DATABASE,
 });
 dbConn.connect(function (err) {
   if (err) throw err;
